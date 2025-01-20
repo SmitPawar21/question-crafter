@@ -1,0 +1,283 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  gap: 2vw;
+  background-image: url('./images/backgray.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-page .container{
+  width: 28%;
+  height: 95%;
+  background-color: #EEEEEE;
+  border: 2px solid white;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.hero button {
+  width: 20vw;
+  height: 10vh;
+  margin-top: 10vh;
+  background-color: rgb(49, 151, 229);
+  font-size: 1.5vw;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: rgb(38, 134, 207);
+}
+
+.main-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  background-color: #948979;
+}
+
+.main-page .container{
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EEEEEE;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.container:hover{
+  background-color: black;
+  transform: scale(0.9);
+}
+
+.cont1{
+  background-color: #153448;
+}
+
+.cont2{
+  background-color: #3C5B6F;
+}
+
+.cont3{
+  background-color: #153448;
+}
+
+/* FILE UPLOADER COMPONENT */
+
+.file-upload-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drop-zone:hover {
+  border-color: #999;
+}
+
+.drop-zone.dragging {
+  border-color: #f6d43b;
+  background-color: #eff6ff;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  color: #9ca3af;
+}
+
+.primary-text {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #c7c7c7;
+}
+
+.secondary-text {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.file-list {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.file-list-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #c7c7c7;
+}
+
+.file-list-items {
+  margin-top: 0.75rem;
+  list-style: none;
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.file-item:last-child {
+  border-bottom: none;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.file-name {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #c7c7c7;
+}
+
+.file-size {
+  width: 10vw;
+  margin-left: 2vw;
+  font-size: 1vw;
+  color: #6b7280;
+}
+
+.remove-button {
+  font-size: 1vw;
+  color: #dc2626;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10vw;
+}
+
+.remove-button:hover {
+  color: #991b1b;
+}
+
+/* QUEST PAGE */
+.quest-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.quest-page .container1, .container2{
+  width: 50%;
+  height: 100%;
+  background-color: #153448;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container2 {
+  background-color: #948979;
+}
+.quest-page .container1 .generate-button{
+  width: 80%;
+  padding: 2vh 0vw;
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  background-color: #005a00;
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+  border: 1px solid rgb(0, 33, 0);
+  outline: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.quest-page .container1 .generate-button:hover{
+  background-color: rgb(0, 134, 0);
+}
+
+.input-field {
+  width: 20%;
+  padding: 1vh 0vw;
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  background-color: rgb(0, 126, 145);
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+  border: 1px solid rgb(0, 33, 0);
+  outline: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.input-field::placeholder{
+  color:white;
+}
+
+.quiz-card .question{
+  width: 100%;
+  height: 40%;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+
+.quiz-card .options {
+  max-width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quiz-card .options .option {
+  width: 48%;
+  height: 45%;
+  border: none;
+  border-radius: 20px;
+  background-color: #EFF3EA;
+  text-align: center;
+  cursor: pointer;
+  color: #131010;
+  font-weight: 600;
+}
+
+.quiz-card .options .option:hover {
+  background-color: #FFF0DC;
+}
