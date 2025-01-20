@@ -14,9 +14,9 @@ Question Crafter is a platform designed to simplify the process of creating ques
 
 ## How It Works ?
 
-- Upload Content: Users upload PDFs or images containing notes or study material.
+- Upload Content: Users upload PDFs containing notes or study material.
 
-- Text Extraction: Extract text from uploaded files using libraries like Tesseract.js for images and pdf-parse for PDFs.
+- Text Extraction: Extract text from uploaded files using libraries like pdf-parse for PDFs.
 
 - AI Processing: The extracted text is processed by an AI model to generate questions based on the desired format.
 
