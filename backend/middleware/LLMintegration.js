@@ -81,6 +81,9 @@ Please format the questions properly and ensure they follow the given pattern. T
 
 // QUESTION PAPER ka llm
 const generateQuestPaper = async (text1, text2) => {
+  console.log(text1);
+  console.log(text2);
+
   try {
     const response = await cohere.chat({
       model: 'command',
@@ -103,7 +106,7 @@ Please format the questions properly and ensure they follow the given pattern. T
       preamble: "You are an experienced educator who specializes in creating well-structured question papers."
     });
 
-    return response.message.text;
+    return response.message;
 
   } catch (error) {
     console.error("Error in generateQuestPaper:", error);

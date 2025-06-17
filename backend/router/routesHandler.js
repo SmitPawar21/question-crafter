@@ -1,7 +1,7 @@
 const express = require("express");
 const questController = require("../controller/questController");
 const quizController = require("../controller/quizController");
-const practiceController = require("../controller/")
+const practiceController = require("../controller/practiceController")
 const upload = require("../middleware/upload");
 
 const router = express.Router();
